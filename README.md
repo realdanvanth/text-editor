@@ -1,8 +1,8 @@
 # Additional features that are added:
 1. Add Bear and makefile for efficient compilation
 2. Add 'wq' command for saving and exiting a file.
-3. Add key commands :
-    <b> zz </b> for deleting a line.
+3. Add key commands :<br/>
+    <b> zz </b> for deleting a line.<br/>
     <b>x</b> for deleting a character.
 4. Structured files for better organization
 
