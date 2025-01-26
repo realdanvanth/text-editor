@@ -4,3 +4,5 @@ filehandler/file_handle.o
 build/
 text.o
 text/
+build/
+compile_commands.json
