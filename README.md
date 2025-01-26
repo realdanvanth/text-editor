@@ -2,8 +2,8 @@
 1. Add Bear and makefile for efficient compilation
 2. Add 'wq' command for saving and exiting a file.
 3. Add key commands :
-    <li>zz</li> for deleting a line.
-    <li>x</li> for deleting a character.
+    <b> zz </b> for deleting a line.
+    <b>x</b> for deleting a character.
 4. Structured files for better organization
 
 
