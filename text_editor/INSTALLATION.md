@@ -10,12 +10,13 @@ git clone
 cd text-editor/text_editor
 ```
 
-3. Build the dependency
+3. Build the dependency files
 
-If Bear is not installed: 
+If Bear is not installed, then run: 
 ```bash
 sudo apt install bear
 ```
+Generate compile_command.json file
 ```bash
 bear -- make
 ```
