@@ -2,6 +2,7 @@
 #include "modes/modes.h"
 #include <ncurses.h>
 
+// use "extern" to link with other files
 extern Character curser;
 static Mode current_mode = NORMAL_MODE; // default its in normal mode
 
