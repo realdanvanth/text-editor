@@ -1,3 +1,4 @@
+/* Text.c */
 #include "filehandler/file_handle.h"
 #include "keyboard/keyboard.h"
 #include "modes/modes.h"
@@ -7,8 +8,6 @@
 Character curser;
 
 int main(int argc, char *argv[]) {
-        // rows = atoi(argv[1]);
-        // cols = atoi(argv[2]);
 
         if (argc < 1) {
                 fprintf(stderr, "Not enough arguments\n");

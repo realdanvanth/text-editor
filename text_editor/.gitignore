@@ -1,3 +1,4 @@
 modes/modes.o
 keyboard/keyboard.o
 filehandler/file_handle.o
+build/
