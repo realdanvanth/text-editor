@@ -3,6 +3,7 @@
 #include "keyboard/keyboard.h"
 #include <ncurses.h>
 #include <string.h>
+#include <unistd.h>
 
 extern Character curser;
 
@@ -49,11 +50,13 @@ int command_mode(char *argv) {
         echo();
         getstr(input);
 
-        // remove loop which is not necessary
+        // remove loop, which is not necessary
         if (strcmp(input, "q") == 0) { // Quit
                 return 1;
         } else if (strcmp(input, "w") == 0) {
-                save_file(argv);               // Save to the given file path
+                save_file(argv); // Save to the given file path
+                printw("File Written successfully %s", argv);
+
         } else if (strcmp(input, "wq") == 0) { // Save and quit
                 save_file(argv);
                 return 1;
@@ -92,6 +95,9 @@ void insert_mode() {
                         check_cursor();
                         delch();
                         refresh();
+                } else if (c == '\n') {
+                        // returns to the new row
+                        move_cursor(c);
                 } else {
                         move(curser.x, curser.y++);
                         check_cursor();

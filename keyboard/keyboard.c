@@ -46,6 +46,15 @@ void move_cursor(char c) {
         case 'x':
                 delch();
                 break;
+        case '\n':
+                if (curser.x < curser.rows - 1) {
+                        ++curser.x;
+                        ++curser.y;
+                        curser.y = 0;
+                        move(curser.x, curser.y);
+                }
+
+                break;
 
         case 'm':
                 if (current_mode == COMMAND_MODE ||

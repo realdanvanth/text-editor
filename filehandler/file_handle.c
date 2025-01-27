@@ -64,7 +64,7 @@ void save_file(const char *path) {
         // Notify the user that the file has been saved
         move(curser.rows - 2, 8);
         attron(COLOR_PAIR(1));
-        printw("File written successfully to %s!", path);
+        // printw("File written successfully to %s!", path);
         attroff(COLOR_PAIR(1));
         refresh();
 

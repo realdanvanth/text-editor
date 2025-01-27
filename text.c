@@ -24,6 +24,7 @@ int main(int argc, char *argv[]) {
         noecho();
         clear();
         refresh();
+
         move(curser.rows - curser.rows, (curser.cols / 2) - 7);
         attron(COLOR_PAIR(1));
         printw("File ~ %s ", argv[3]);
@@ -54,6 +55,7 @@ int main(int argc, char *argv[]) {
         move(1, 3);
         refresh();
         char c = getch();
+
         while (1) {
                 if (c == 'i')
                         insert_mode();
@@ -70,7 +72,7 @@ int main(int argc, char *argv[]) {
                         move_cursor(c);
                 }
                 refresh();
-                timeout(5000);
+                timeout(3000);
                 c = getch();
         }
         refresh();
